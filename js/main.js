@@ -10,6 +10,9 @@ $(document).ready(function () {
 	$('.header__container-burger').click(function (event) {
 		$('.header__container-burger,.header__container-menu').toggleClass('active');
 	});
+	$('.menu__item-link').click(function () {
+		$('.header__container-burger,.header__container-menu').removeClass('active');
+	})
 });
 
 //===SliderSettings====
@@ -60,7 +63,6 @@ $(document).ready(function () {
 			$(path).removeClass('activeM');
 		});
 	});
-
 });
 
 /* //= Charly =
