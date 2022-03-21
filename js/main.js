@@ -1,20 +1,20 @@
-$(document).ready(function(){
-	$('.friendCard__button').click(function(event){
+$(document).ready(function () {
+	$('.friend-card__button').click(function (event) {
 		event.preventDefault();
 	});
 });
 
 //===Burger===========
 
-$(document).ready(function(){
-	$('.header__container_burger').click(function(event){
-		$('.header__container_burger,.header__container_menu').toggleClass('active');
+$(document).ready(function () {
+	$('.header__container-burger').click(function (event) {
+		$('.header__container-burger,.header__container-menu').toggleClass('active');
 	});
 });
 
 //===SliderSettings====
 
-$(document).ready(function(){
+$(document).ready(function () {
 	$('.friends__slider').slick({
 		infinite: true,
 		slidesToShow: 3,
@@ -50,82 +50,95 @@ $(document).ready(function(){
 
 
 //===Modals==============
-//= Charly =
-$(document).ready(function(){
-	$('#charlyCard').click(function(){
+
+$(document).ready(function () {
+	$('.modal-link').click(function () {
+		let path = $(this).attr('href');
+		console.log(path);
+		$(path).addClass('activeM');
+		$('.modal__card-close').click(function () {
+			$(path).removeClass('activeM');
+		});
+	});
+
+});
+
+/* //= Charly =
+$(document).ready(function () {
+	$('#charlyCard').click(function () {
 		$('#charlyModal').addClass('activeM');
 	});
-	$('#charlyClose').click(function(){
+	$('#charlyClose').click(function () {
 		$('#charlyModal').removeClass('activeM');
 	});
 });
 
 //= Freddie =
-$(document).ready(function(){
-	$('#freddieCard').click(function(){
+$(document).ready(function () {
+	$('#freddieCard').click(function () {
 		$('#freddieModal').addClass('activeM');
 	});
-	$('#freddieClose').click(function(){
+	$('#freddieClose').click(function () {
 		$('#freddieModal').removeClass('activeM');
 	});
 });
 
 //= Jennifer =
-$(document).ready(function(){
-	$('#jenniferCard').click(function(){
+$(document).ready(function () {
+	$('#jenniferCard').click(function () {
 		$('#jenniferModal').addClass('activeM');
 	});
-	$('#jenniferClose').click(function(){
+	$('#jenniferClose').click(function () {
 		$('#jenniferModal').removeClass('activeM');
 	});
 });
 
 //= Katrine =
-$(document).ready(function(){
-	$('#katrineCard').click(function(){
+$(document).ready(function () {
+	$('#katrineCard').click(function () {
 		$('#katrineModal').addClass('activeM');
 	});
-	$('#katrineClose').click(function(){
+	$('#katrineClose').click(function () {
 		$('#katrineModal').removeClass('activeM');
 	});
 });
 
 //= Scarlett =
-$(document).ready(function(){
-	$('#scarlettCard').click(function(){
+$(document).ready(function () {
+	$('#scarlettCard').click(function () {
 		$('#scarlettModal').addClass('activeM');
 	});
-	$('#scarlettClose').click(function(){
+	$('#scarlettClose').click(function () {
 		$('#scarlettModal').removeClass('activeM');
 	});
 });
 
 //= Sophia =
-$(document).ready(function(){
-	$('#sophiaCard').click(function(){
+$(document).ready(function () {
+	$('#sophiaCard').click(function () {
 		$('#sophiaModal').addClass('activeM');
 	});
-	$('#sophiaClose').click(function(){
+	$('#sophiaClose').click(function () {
 		$('#sophiaModal').removeClass('activeM');
 	});
 });
 
 //= Sophia =
-$(document).ready(function(){
-	$('#timmyCard').click(function(){
+$(document).ready(function () {
+	$('#timmyCard').click(function () {
 		$('#timmyModal').addClass('activeM');
 	});
-	$('#timmyClose').click(function(){
+	$('#timmyClose').click(function () {
 		$('#timmyModal').removeClass('activeM');
 	});
 });
 
 //= Woody =
-$(document).ready(function(){
-	$('#woodyCard').click(function(){
+$(document).ready(function () {
+	$('#woodyCard').click(function () {
 		$('#woodyModal').addClass('activeM');
 	});
-	$('#woodyClose').click(function(){
+	$('#woodyClose').click(function () {
 		$('#woodyModal').removeClass('activeM');
 	});
-});
+}); */
